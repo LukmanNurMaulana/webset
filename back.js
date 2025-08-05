@@ -1,26 +1,29 @@
+let namaDefault = document.getElementById("namae");
+let contactDefault = document.getElementById("contact");
+
 function gantiNama() {
-    let name = prompt("masukan nama : ");
-    let confirmasi = confirm("Mau ganti contact?");
+    let input = prompt("Masukan Nama Baru : ");
+    let namaBaru = input;
 
-    // while (name == "" && confirmasi == false || name == "" && confirmasi == true) {
-    //     return name;
-    // };
-    if (name == "" && confirmasi == false) {
-        return name;
+    if (input.trim() == "" || input == null) {
+        input = namaDefault;
     }
-    else if (name = "" && contact == null) {
-        return name;
+    else {
+        namaDefault.innerText = namaBaru;
     }
+};
 
-        document.getElementById("namae").innerText = name;
-        if (confirmasi == true ) {
-            let contact = prompt("Masukan contact : ");
-            if (contact == "") {
-                return contact
-            }
-            document.getElementById("contact").innerText = contact;
-        }
-    };
+function gantiContact() {
+    let input = prompt("masukan contact : ");
+    let contactBaru = input;
+    
+    if (input.trim() == "" || input == null) {
+        input = contactDefault
+    }
+    else {
+        contactDefault.innerText = contactBaru
+    }
+}
 
 let gambars = ["kacamata.png", "rafaelaaa.jpg", "yofukasi2.jpg"];
 let gambarNow = 0;
