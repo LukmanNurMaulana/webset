@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body.background {
+  background-color: #171717;
+  overflow-x: hidden;
+}
+
+.headerbg {
+  background-image: linear-gradient(to right, #171717 0%, rgba(23, 23, 23, 0.0) 100%), url('kacamata.png');
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+  border-radius: 10px;
+  border-bottom: 2px solid white;
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: "Bebas Neue", sans-serif;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 55px;
+  padding-left: 40px;
+}
+.point,
+.point2 {
+  text-align: left;
+  font-size: larger;
+  padding-left: 5%;
+}
+
+.point {
+  padding-top: 8%;
+  padding-right: 5%;
+}
+
+.point2 {
+  padding-top: 2%;
+}
+
+.textcolor {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: larger;
+}
+
+p {
+  font-size: 150%;
+  text-align: justify;
+  padding: 0 5%;
+  line-height: 2;
+  letter-spacing: 2px;
+}
+
+.highlight {
+  background-color: white;
+  color: #171717;
+  padding: 6px;
+  border-radius: 5px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+}
+
+/* === SKILL GRID + DROPDOWN === */
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 0 5%;
+  margin-top: 20px;
+}
+
+.skill-item {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #171717;
+  background-color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  text-align: left;
+}
+
+.skill-item:hover {
+  background-color: #333;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.skill-item.active .dropdown-content {
+  display: block;
+}
+
+/* OPSIONAL: KONTAK DLL */
+.contact {
+  color: #171717;
+  font-size: 15px;
+  background-color: white;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+.Tombol {
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  color: #171717;
+  width: 95px;
+  height: 35px;
+  border: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.Tombol:hover {
+  background-color: #333;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  color: white;
+  width: 95px;
+  height: 35px;
+  border: white;
+  cursor: pointer;
+}
+.name {
+  display: block;
+  font-size: 65px;
+  color: #171717;
+  background-color: white;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+}
